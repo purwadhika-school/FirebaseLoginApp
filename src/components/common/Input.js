@@ -1,13 +1,15 @@
 import React from 'react'
 import { TextInput, View, Text, StyleSheet } from 'react-native'
 
-const Input = ({ label, placeholder, secureTextEntry }) => (
+const Input = ({ label, placeholder, secureTextEntry, value, onChangeText  }) => (
     <View style={styles.container}>
       <Text style={styles.label}>{label}</Text>
       <TextInput 
         secureTextEntry={secureTextEntry}
         placeholder={placeholder} 
         autoCorrect={false} 
+        value={value}
+        onChangeText={onChangeText}
         style={styles.input} />
     </View>
   )
@@ -26,6 +28,7 @@ const styles = StyleSheet.create({
     height: 35,
     width: 100,
     flex: 2,
+    paddingTop: 5
   }, container: {
     height: 40,
     flex: 1,

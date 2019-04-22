@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     color: '#007AFF',
     fontSize: 16,
-    fontWight: '600',
+    fontWeight: '600',
     paddingTop: 10,
     paddingBottom: 10,
   }
